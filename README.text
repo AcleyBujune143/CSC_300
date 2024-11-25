@@ -1,0 +1,16 @@
+About: Linked lists - CSC 250 Review
+Date: Sep 11, 2024
+Comments: Includes five files -> graph.h, mainG.cpp, graph.cpp, sqll.cpp, sqll.h
+
+*** FIRST OPEN THE FOLDER WHERE THESE THREE FILES ARE LOCATED:
+    In command prompt:
+        cd folder-containing-the-files
+        code .
+*** 
+To compile: g++ mainG.cpp graph.cpp  sqll.cpp
+To run: ./a 
+
+OR
+
+To compile: g++ mainG.cpp graph.cpp  sqll.cpp -o whatevernameyoulike
+To run: ./whatevernameyoulike
