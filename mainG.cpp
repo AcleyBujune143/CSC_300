@@ -58,5 +58,17 @@ int main()
     else
         cout << "No Cycle Detected!" << endl;
 
+
+    
+    cout << "\nKruskal's Algorithm Test:" << endl;
+    g.kruskal();
+    
+    cout << "\nDijkstra's Algorithm Test:" << endl;
+    g.dijkstra('A');
+
+    cout << "\nPrim's Algorithm Test:" << endl;
+    g.prim('A');
+
     return 0;
+    
 }

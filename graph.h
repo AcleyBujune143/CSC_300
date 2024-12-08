@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <climits>
 #include "sqll.h"  // Include your stack/queue implementation using linked list
 
 using namespace std;
@@ -22,6 +23,13 @@ struct vertex
 
     // for traversal
     short visited; 
+};
+
+struct EdgeInfo
+{
+    char src;
+    char dest;
+    int weight;
 };
 
 class Graph
@@ -57,9 +65,13 @@ class Graph
         bool dfsCycleHelper(vertex* currentVertex, int parent);
         bool detectCycleDFS();
 
-        // Print Connected Components - Extra Credit
-        // void connectedComponents();
+        //MST
+        int findSet(int vertex, int parent[]);
+        void unionSet(int u, int v, int parent[], int rank[]);
+        void kruskal();
+
+        void dijkstra(char start);
+        void prim(char start);
 
 };
-
 #endif
