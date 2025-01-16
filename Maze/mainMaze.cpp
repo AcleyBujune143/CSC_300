@@ -6,7 +6,15 @@ int main() {
 
     Maze maze(rows, cols);
     maze.generateMaze();
+
+    // Display the maze
+    maze.displayMaze();
+
+
     maze.play();
+
+    // Find and display the shortest path
+    maze.findAndDisplayShortestPath();
 
     return 0;
 }
